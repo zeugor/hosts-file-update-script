@@ -22,6 +22,9 @@
 #   and add the line:
 #      @reboot ( sleep 30 ; sh /opt/hosts-update-script/hosts-update-script.sh )
 
+# TODO add --help option to the script and list all hosts versions option names
+# TODO check if the version name parameter match, else list version options names.
+# TODO get the selected option parameter, and proceed.
 UNIFIED_HOSTS="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts"
 UNIFIED_FAKENEWS_HOSTS="https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews/hosts"
 UNIFIED_GAMBLING_HOSTS="https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts"
@@ -40,7 +43,8 @@ UNIFIED_GAMBLING_PORN_SOCIAL_HOSTS="https://raw.githubusercontent.com/StevenBlac
 UNIFIED_FAKENEWS_GAMBLING_PORN_SOCIAL_HOSTS="https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts"
 
 # Select here the hosts file to apply
-SELECTED_HOSTS=$UNIFIED_HOSTS
+SELECTED_HOSTS=$UNIFIED_FAKENEWS_GAMBLING_HOSTS
+# TODO get the selected option from the paramater
 
 HOSTS_PATH="/etc/hosts"
 TIMESTAMP_SUFFIX=$(date +'%Y%m%d-%H%M%S_%N')
