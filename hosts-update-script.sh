@@ -43,11 +43,11 @@ UNIFIED_GAMBLING_PORN_SOCIAL_HOSTS="https://raw.githubusercontent.com/StevenBlac
 UNIFIED_FAKENEWS_GAMBLING_PORN_SOCIAL_HOSTS="https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts"
 
 # Select here the hosts file to apply
-SELECTED_HOSTS=$UNIFIED_FAKENEWS_GAMBLING_HOSTS
+SELECTED_HOSTS=$UNIFIED_HOSTS
 # TODO get the selected option from the paramater
 
 HOSTS_PATH="/etc/hosts"
-TIMESTAMP_SUFFIX=$(date +'%Y%m%d-%H%M%S_%N')
+TIMESTAMP_SUFFIX=$(date +'_%Y%m%d-%H%M%S-%N')
 NEW_HOSTS_PREFIX="hosts_"
 TEMP_FOLDER="/tmp/hosts-update-script/"
 NEW_HOSTS=$TEMP_FOLDER$NEW_HOSTS_PREFIX$TIMESTAMP_SUFFIX
